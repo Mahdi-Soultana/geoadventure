@@ -1,0 +1,299 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    color: white;
+    background-color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    line-height: 1.6;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.76);
+}
+
+.boxs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    position: relative;
+    justify-content: center;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    height: 120%;
+    width: 100%;
+    background: linear-gradient( rgba(0, 0, 0, 0.856), rgba(211, 211, 211, 0.171) 40% 50%, rgba(0, 0, 0, 0.507) 80%), url("./img/krisztian-tabori-jPlt8OGgijA-unsplash.jpg") no-repeat center center/cover;
+    z-index: -1;
+    filter: blur(1px);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 0 5rem;
+    background-color: rgba(51, 51, 51, 0.349);
+    padding: 1vw 3vw;
+}
+
+.icons {
+    margin-left: auto;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+li {
+    padding: 0 1rem;
+    margin: 0 1rem;
+    position: relative;
+    font-weight: 500;
+    font-size: 1.7rem;
+    letter-spacing: 2px;
+    color: rgb(255, 255, 255);
+}
+
+img {
+    width: 100%;
+    height: 68%;
+    object-fit: cover;
+    display: inline-block;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.986);
+    border-radius: 3px;
+}
+
+figcaption span {
+    display: inline-block;
+    font-weight: 1000;
+    margin: 1rem 0 0 0;
+    font-size: 1.9rem;
+    text-transform: capitalize;
+    word-spacing: -1px;
+    line-height: 1.2;
+}
+
+.info {
+    width: 55%;
+    margin-bottom: 3vw;
+}
+
+.info p {
+    letter-spacing: 2px;
+    font-size: 1.7rem;
+}
+
+.box {
+    /* grid-row: 8/ span 2; */
+    /* background-color: rgb(202, 202, 202); */
+    height: 255px;
+    position: relative;
+}
+
+.container {
+    padding: 3vw 5vw 0;
+}
+
+.category {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 4px;
+    border: solid 3px rgb(255, 251, 0);
+    align-self: end;
+    margin: 1rem 2rem;
+    padding: .0rem .6rem;
+    color: rgba(255, 255, 255, 0.89);
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.637), inset 0 0 3px rgba(0, 0, 0, 0.637);
+}
+
+.veiwCollection {
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 0px;
+    text-transform: capitalize;
+    display: inline-block;
+    position: absolute;
+    top: 20%;
+    right: 10%;
+}
+
+.category2 {
+    grid-column: 2/3;
+}
+
+.category3 {
+    grid-column: 3/4;
+}
+
+.category4 {
+    grid-column: 4/5;
+}
+
+h1 {
+    margin-bottom: 3vw;
+    position: relative;
+}
+
+h2 {
+    font-size: 4rem;
+    position: relative;
+}
+
+h2::before {
+    content: "New";
+    border: rgb(255, 255, 255) solid 4px;
+    border-radius: 4px;
+    position: absolute;
+    font-size: 1.5rem;
+    top: -30%;
+    left: 0;
+    padding: 0 1rem;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.473), inset 0 0 3px rgba(0, 0, 0, 0.637);
+}
+
+h1 span:last-child {
+    font-size: 6rem;
+    margin-left: 1rem;
+}
+
+[class*="btn-"] {
+    text-decoration: none;
+    color: white;
+    padding: 1.2rem 3.1rem;
+    background-color: rgba(77, 77, 77, 0.562);
+    margin: 2vw 0 0 0rem;
+    display: inline-block;
+    font-size: 2.2rem;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+    box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.527);
+    border-radius: 4px;
+}
+
+.btn-line {
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0);
+    color: rgb(34, 34, 34);
+    background-color: transparent;
+    font-size: 1.9rem;
+    font-weight: 500;
+    letter-spacing: 0px;
+    color: rgba(75, 75, 75, 0.829);
+}
+
+.cube {
+    display: inline-block;
+    width: 4rem;
+    height: 100%;
+    border: yellow solid 5px;
+    padding: 2.6rem 1.7rem;
+    position: relative;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.473), inset 0 0 3px rgba(0, 0, 0, 0.637);
+}
+
+.geo.geo.geo {
+    font-size: 3.2rem;
+}
+
+.logo {
+    display: flex;
+    margin-right: 3vw;
+}
+
+.text {
+    display: flex;
+    flex-flow: column wrap;
+    justify-items: center;
+    justify-content: center;
+    line-height: 1;
+    margin-left: 1vw;
+}
+
+.text span:last-child {
+    color: rgb(255, 255, 255);
+    text-align: right;
+}
+
+figcaption {
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+}
+
+figcaption div {
+    flex: 6;
+}
+
+.doted {
+    height: 2.4vw;
+    width: 3.5vw;
+    margin-right: .5vw;
+    opacity: .4;
+    box-shadow: 0 1px 6px rgb(0, 0, 0), inset 0 0 3px rgb(0, 0, 0);
+}
+
+
+/* nav .cube {
+    display: inline-block;
+    width: 4rem;
+    height: 100%;
+    border: yellow solid 5px;
+    padding: 2.6rem 1.7rem;
+    position: relative;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.473), inset 0 0 3px rgba(0, 0, 0, 0.637);
+}
+
+nav .geo.geo.geo {
+    font-size: 2.2rem;
+} */
+
+figure p {
+    font-size: 1.6rem;
+    font-weight: 400;
+    word-spacing: 1px;
+    line-height: 1.2;
+    ;
+}
+
+@media screen and (max-width:600px) {
+    .info {
+        width: 100%;
+    }
+    html {
+        font-size: 49%;
+    }
+    h1 {
+        margin-bottom: 8vw;
+        line-height: 1;
+    }
+    header::before {
+        height: 220%;
+    }
+    .doted {
+        height: 8vw;
+        width: 10vw;
+        margin-right: .5vw;
+        opacity: .5;
+    }
+    figcaption span {
+        font-size: 2.7rem;
+    }
+    .info {
+        margin-bottom: 8rem;
+    }
+}
